@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Butterfly Identification"
+        android:textColor="#425066"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_marginTop="50sp"
+        android:textSize="23dp"
+        android:id="@+id/title"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/button"
+        android:text="Take Picture"
+        android:textAllCaps="false"
+        android:layout_above="@id/button2"
+        android:textSize="21sp"
+        android:backgroundTint="#616161"
+        android:textColor="#E6E6E6"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/button2"
+        android:text="Launch Gallery"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:textSize="21sp"
+        android:backgroundTint="#425066"
+        android:textColor="#E6E6E6"
+        android:layout_marginBottom="70sp"
+        />
+
+    <ImageView
+        android:layout_width="370sp"
+        android:layout_height="370sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView"
+        android:background="@drawable/butterfly"
+        android:layout_below="@id/hrA"
+        android:layout_marginTop="10dp"
+        />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:background="#FFA800"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50sp"
+        android:id="@+id/hrA"
+        android:layout_below="@+id/title"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:background="#FFA800"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/imageView"
+        android:id="@+id/hrB"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:background="#FFA800"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/scientificName"
+        android:id="@+id/hrC"/>
+
+    <View
+        android:layout_width="150dp"
+        android:layout_height="3dp"
+        android:background="#E6E6E6"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/confScore"
+        android:id="@+id/hrD"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#425066"
+        android:id="@+id/classified"
+        android:layout_below="@+id/hrB"
+        android:layout_marginTop="20sp"
+        android:text="PREVIEW"
+        android:textAllCaps="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="---"
+        android:textColor="#FFA800"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/result"
+        android:layout_below="@+id/classified"
+        android:textAllCaps="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="---"
+        android:textColor="#FFA800"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/confScore"
+        android:layout_below="@+id/result"
+        android:textAllCaps="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#425066"
+        android:id="@+id/scientific"
+        android:layout_below="@+id/hrD"
+        android:layout_marginTop="20sp"
+        android:text="PREVIEW"
+        android:textAllCaps="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="---"
+        android:textColor="#FFA800"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/scientificName"
+        android:layout_below="@+id/scientific"
+        />
+</RelativeLayout>
